@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: pink;
+    background-image: url(../imagenes/Fondo_Mapster.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+   }
+
+.header {
+    background-color: pink;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.nav__lista {
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+
+}
+
+.nav__item {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: oblique;
+    margin-left: 16px;
+    justify-content: center;
+
+}
+
+.titulo {
+    color: darkgoldenrod;
+}
+
+.inicio1__titulo {
+    text-align: center;
+    font-size: 35px;
+    margin: 50px;
+}
+
+.inicio1__parrafo {
+    margin-top: 16px;
+    text-align: center;
+
+}
+
+.inicio1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    
+}
+
+.flexbox {
+    display: flex;
+}
+
+.imagen__ppal {
+    border-radius: 10px;
+    margin-bottom: 16px;
+    display: flex;
+    
+
+}
+
+.fila {
+    display: flex;
+
+}
+.columna {
+   flex: auto;
+   padding: 5px;
+     
+   
+}
+
+footer {
+    background-color: pink;
+    
+        
+}
+
+.footer__fila {
+    display: flex;
+    
+
+}
+.footer__columna {
+    
+    flex: auto;
+    padding: 24px;
+    align-items: center;
+    position: relative;
+        
+   
+}
+
+
+.texto {
+    
+    position: absolute;
+    left: 44%;
+    bottom: 0%;
+    align-items: center;
+    justify-items: center;
+    
+    
+ }
+
+.logo {
+    position: relative;
+    display: flex;
+}
+
+ .mapster {
+    
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    justify-content: end;
+    align-content: flex-end;
+
+
+ }
+ 
+ .inicio2__parrafo {
+    text-align: center;
+
+ }
+
+ .imagen__producto {
+    margin-top: 2%;
+    margin-left: 25%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+
+ }
+
+ .imagen__producto2 {
+    margin-top: 2%;
+    margin-left: 15%;
+    border-radius: 10px;
+
+ }
+
+ .imagen__producto3 {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 8%;
+    border-radius: 10px;
+
+ }
+
+ .texto_form {
+    margin-left: 25%;
+    margin-bottom: 5%;
+
+ }
+
+ .texto__posicion {
+    text-align: center;
+    margin-bottom: 1%;
+ }
+
+ .texto__posicion2 {
+    margin-top: 1%;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+
+ }
+
+ .gallery {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
+
+ }
+
+ .featured {
+    grid-column: span 2;
+
+ }
+
+ 
+/* Tablet */
+@media screen and (max-width:1023px){
+    .inicio1__centro {
+        display: none;
+    }
+}
+
+/* Movil */
+@media screen and (max-width:599px){
+    .footer {
+        padding: 4rem 1rem;
+    }
+
+    .nav {
+        display: none;
+        background-color: darkgreen;
+        position: fixed;
+        /* top, left, right, bottom */
+        top: 0;
+        left: 0;
+        z-index: 1000000;
+        width: 80%;
+        height: 100vh;
+    }
+
+    .nav__lista {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        height: 100%;
+    }
+    
+    .header__icono {
+        display: block;
+    }
+
+    .nav:target {
+        display: block;
+    }
+
+    .nav__item--oculto {
+        display: block;
+    }
+
+    .inicio1 {
+        flex-direction: column;
+        padding: 5rem 1rem;
+    }
+
+    .inicio1__izq {
+        width: 100%;
+    }
+
+    .inicio1__der {
+        width: 100%;
+    }
+
+    .inicio1__titulo {
+        font-size: 40px;
+    }
+
+    .inicio1__texto {
+        font-size: 30px;
+    }
+
+    .inicio1__centro {
+        display: flex;
+        flex-direction: row;
+        bottom: 10px;
+    }
+}
+
