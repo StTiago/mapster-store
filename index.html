@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos.css">
 
@@ -15,7 +16,10 @@
 <body>
     <header class="header">
         <img src="./imagenes/Logo_Mapster_PNG.png" alt="Logo_Mapster" width="150" height="150">
-        <nav class="nav">
+        <a href="#menu" class="header__icono">
+            <span class="jam jam-menu"></span>
+        </a>
+        <nav class="nav" id="menu">
             <ul class="nav__lista">
                 <li class="nav__item">
                     <a href="./index.html" class="titulo">Inicio</a>
@@ -32,18 +36,31 @@
                 <li class="nav__item">
                     <a href="./paginas/contacto.html" class="titulo">Contacto</a>
                 </li>
+                <li class="nav__item nav__item--oculto">
+                    <a href="#cerrado">❌</a>
+                </li>
             </ul>
         </nav>
     </header>
 <main class="main">
     <section>
-        <h1 class="inicio1__titulo">Heartmade for You</h1>
-        <p class="inicio1__parrafo">If you like it, wear it!</p>
-        <div class="inicio1">
-            <img src="./imagenes/Icono_Mapster.jpg" alt="Icono_Mapster" width="200" height="200">
-            <br>
-            <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 offset-md-4">
+                    <div class="card">
+                        <img src="./imagenes/Icono_Mapster.jpg" class="card-img-top" alt="Icono_Mapster">
+                        <div class="card-body">
+                          <h2 class="card-title">Heartmade for You</h2>
+                          <p class="card-text">If you like it, wear it!</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
+        <br><br><br>
     </section>
     <section class="seccion">
         <div class="grid">

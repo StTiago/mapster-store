@@ -15,7 +15,7 @@ body {
    }
 
 main {
-    margin-top: 200px;
+    margin-top: 70px;
     min-height: 100vh;
 }
 
@@ -56,6 +56,20 @@ main {
 
 }
 
+.nav__item--oculto {
+    display: none;
+
+}
+
+.header__icono {
+    font-size: 32px;
+    color: darkgoldenrod;
+    text-decoration: none;
+    display: none;
+
+
+}
+
 .titulo {
     color: darkgoldenrod;
 }
@@ -71,6 +85,17 @@ main {
     text-align: center;
 
 }
+
+.card-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-text {
+    text-align: center;
+    font-size: 24px;
+}
+
 
 .inicio1 {
     display: flex;
@@ -306,6 +331,8 @@ footer {
 
 
 
+
+
 /* Tablet */
 @media screen and (max-width:1023px){
     .inicio1__titulo {
@@ -365,8 +392,13 @@ footer {
     
     }
 
+    .header__icono {
+        display: block;
+    }
+
     .nav {
-        
+        display: none;
+        background-color: pink;
         position: fixed;
         top: 0;
         left: 0;
@@ -375,12 +407,21 @@ footer {
         height: 100vh;
     }
 
+    .nav:target {
+        display: block;
+    }
+
     .nav__lista {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         gap: 1rem;
         height: 100%;
+    }
+
+    .nav__item--oculto {
+        display: block;
+    
     }
     
     .texto {
