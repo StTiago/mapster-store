@@ -1,0 +1,52 @@
+footer {
+    background-color: pink;
+    
+    
+        
+}
+
+.footer__fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+
+}
+.footer__columna {
+    
+    flex: auto;
+    padding: 24px;
+    align-items: center;
+    position: relative;
+        
+   
+}
+
+
+.texto {
+    
+    position: absolute;
+    left: 44%;
+    bottom: 0%;
+    align-items: center;
+    justify-items: center;
+    
+    
+ }
+
+.logo {
+    position: relative;
+    display: flex;
+}
+
+ .mapster {
+    
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    justify-content: end;
+    align-content: flex-end;
+
+
+ }
