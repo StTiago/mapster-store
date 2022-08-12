@@ -1,2 +1,26 @@
 $colorPrincipal: pink;
 
+$estilos: (
+    color: pink,
+    centro: center,
+   
+    
+);
+
+div {
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+}
+
+.error {
+    border: 1px solid red;
+    background-color: red;
+}
+
+.error--severo {
+    @extend .error;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
