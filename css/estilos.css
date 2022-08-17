@@ -193,6 +193,8 @@ footer {
  
  .inicio2__parrafo {
     text-align: center;
+    justify-content: center;
+    padding: 1rem;
 
  }
 
