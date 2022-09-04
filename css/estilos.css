@@ -342,14 +342,15 @@ footer {
         
     }
 
-    .grid {
-        display: none;
-
-    }
+   
 }
 
 /* Movil */
 @media screen and (max-width:599px){
+    * {
+        overflow-x: hidden;
+    }
+
     .inicio1__titulo {
         text-align: left;
         font-size: 25px;
@@ -431,5 +432,9 @@ footer {
         display: none;
     }
 
-}
+    .mapster {
+        position: unset;
+    }
 
+
+}
